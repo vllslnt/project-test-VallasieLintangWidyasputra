@@ -6,7 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Ideas</title>
         <link rel="stylesheet" href="Base-Styles.css">
+        <link rel="stylesheet" href="Ideas-Styles.css">
         <script defer src="Scripts.js"></script>
+        <script defer src="Scripts-Ideas.js"></script>
     </head>
     <body>
         <header class = "header">
@@ -37,5 +39,49 @@
                 </nav>
             </div>
         </header>
+        <main>
+            <section class="banner">
+                <div class="banner-content">
+                    <h1>Ideas</h1>
+                    <p>Where all great things begin.</p>
+                </div>
+            </section>
+            <section class="post-section">
+                <div class="post-controls">
+                    <div class="post-count">
+                        <span>Showing 1-10 of 100</span>
+                    </div>
+                    <div class="post-options">
+                        <label for="postsPerPage">Posts per page:</label>
+                        <select id="postsPerPage">
+                            <option value="10">10</option>
+                            <option value="20">20</option>
+                            <option value="50">50</option>
+                        </select>
+                        <label for="sortPosts">Sort by:</label>
+                        <select id="sortPosts">
+                            <option value="newest">Newest</option>
+                            <option value="oldest">Oldest</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="post-grid">
+                    <div class="post-item">
+                        <img src="https://via.placeholder.com/300x150" alt="Post Image">
+                        <div class="post-content">
+                            <h2 class="post-title">A Post</h2>
+                            <p class="post-description">Description</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination">
+                    <button class="first-page">&laquo;</button>
+                    <button class="prev-page">&lsaquo;</button>
+                    <span class="page-info">Page 1 - 10</span>
+                    <button class="next-page">&rsaquo;</button>
+                    <button class="last-page">&raquo;</button>
+                </div>
+            </section>
+        </main>
     </body>
 </html>
